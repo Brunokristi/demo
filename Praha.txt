@@ -1,0 +1,7 @@
+Bruno
+helou
+Praha
+cook
+455.0
+janka, adam, Bruno
+0, 0, 1, 

@@ -1,0 +1,7 @@
+Bruno
+American dream
+New york
+sightseeing, empire state building
+4000.0
+simon, adam, laura, Bruno
+0, 0, 0, 1, 

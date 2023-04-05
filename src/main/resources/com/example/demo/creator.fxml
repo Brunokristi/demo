@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Creator">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="33.0" layoutY="71.0" text="So far you have created these places:" />
+            <TableView fx:id="CreatorTable" layoutX="33.0" layoutY="101.0" prefHeight="236.0" prefWidth="283.0">
+              <columns>
+                <TableColumn fx:id="locationColumn" prefWidth="75.0" text="Place " />
+                <TableColumn fx:id="likesColumn" prefWidth="75.0" text="Invited" />
+                 <TableColumn fx:id="totalRatingsColumn" prefWidth="130.0" text="Accepted Invitation" />
+              </columns>
+            </TableView>
+            <TextField fx:id="CreatorCity" layoutX="378.0" layoutY="100.0" promptText="City" />
+            <TextField fx:id="CreatorNeighbouringCities" layoutX="378.0" layoutY="145.0" promptText="Neighbouring Cities" />
+            <TextField fx:id="CreatorCaption" layoutX="378.0" layoutY="188.0" promptText="Caption" />
+            <TextField fx:id="CreatorCost" layoutX="378.0" layoutY="231.0" promptText="Cost" />
+            <Button fx:id="CreatorAddNeighbour" layoutX="541.0" layoutY="145.0" mnemonicParsing="false" onAction="#AddNeighbour" text="+" />
+            <TextField fx:id="CreatorPlans" layoutX="378.0" layoutY="273.0" promptText="Plans" />
+            <TextField fx:id="CreatorInvite" layoutX="378.0" layoutY="314.0" promptText="Invite" />
+            <Button fx:id="CreatorAddPlans" layoutX="540.0" layoutY="273.0" mnemonicParsing="false" onAction="#AddPlans" text="+" />
+            <Button fx:id="CreatorAddFriend" layoutX="539.0" layoutY="314.0" mnemonicParsing="false" onAction="#AddFriend" text="+" />
+            <Button fx:id="CreatorCreatePlace" layoutX="378.0" layoutY="353.0" mnemonicParsing="false" onAction="#CreatePlace" text="Create place" />
+            <Label layoutX="378.0" layoutY="71.0" text="Create a new place!" />
+            <Line endX="-7.0" endY="-74.0" layoutX="360.0" layoutY="145.0" startX="-7.0" startY="230.0" stroke="#00000079" />
+            <Button fx:id="CreatorLogOut" layoutX="564.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogOut" text="↑" />
+            <Button fx:id="CreatorCheckCity" layoutX="538.0" layoutY="100.0" mnemonicParsing="false" onAction="#checkCity" text="✓" />
+            <Label fx:id="CreatorMessage" layoutX="378.0" layoutY="44.0" prefHeight="17.0" prefWidth="203.0" />
+            <Label layoutX="36.0" layoutY="18.0" text="Hi" />
+            <Label layoutX="519.0" layoutY="18.0" text="Log out" textAlignment="RIGHT" />
+            <Label fx:id="CreatorName" layoutX="54.0" layoutY="18.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

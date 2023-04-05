@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SignUp">
+   <center>
+      <AnchorPane>
+         <children>
+            <Label layoutX="254.0" layoutY="44.0" text="Enter information" textAlignment="CENTER" />
+            <TextField fx:id="SignUpUsername" layoutX="227.0" layoutY="119.0" />
+            <Label layoutX="274.0" layoutY="95.0" text="Username" textAlignment="CENTER" />
+            <Label layoutX="276.0" layoutY="164.0" text="Password" textAlignment="CENTER" />
+            <Label layoutX="254.0" layoutY="226.0" text="Reenter password" textAlignment="CENTER" />
+            <RadioButton fx:id="CreatorButton" layoutX="270.0" layoutY="293.0" mnemonicParsing="false" text="Creator" />
+            <Button fx:id="SighUpButton" layoutX="276.0" layoutY="333.0" mnemonicParsing="false" onAction="#SignUpAction" text="SignUp" textAlignment="CENTER" />
+            <Label fx:id="SignUpLabel" contentDisplay="TOP" layoutX="67.0" layoutY="78.0" prefHeight="17.0" prefWidth="429.0" />
+            <PasswordField fx:id="SignUpPassword" layoutX="227.0" layoutY="188.0" />
+            <PasswordField fx:id="SighUpPassword2" layoutX="226.0" layoutY="255.0" />
+            <Button fx:id="SignUpBackButton" layoutX="27.0" layoutY="19.0" mnemonicParsing="false" onAction="#GoBack" text="←" />
+            <Label layoutX="61.0" layoutY="23.0" text="back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

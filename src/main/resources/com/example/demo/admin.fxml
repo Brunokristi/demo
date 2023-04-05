@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Admin">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="120.0" text="Select from one of these " />
+            <TableView fx:id="AdminTableInvitations" layoutX="34.0" layoutY="147.0" prefHeight="211.0" prefWidth="230.0">
+              <columns>
+                <TableColumn fx:id="AdminInvitations" prefWidth="222.0" text="You have been invited to:" />
+              </columns>
+            </TableView>
+            <Label layoutX="34.0" layoutY="67.0" text="Enter the name of the place to show details" />
+            <TextField fx:id="AdminTextField" layoutX="33.0" layoutY="88.0" prefHeight="25.0" prefWidth="170.0" />
+            <Button fx:id="AdminButtonShow" layoutX="219.0" layoutY="88.0" mnemonicParsing="false" onAction="#locationInformation" text="Show" />
+            <Button fx:id="AdminLogOut" layoutX="559.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogOutAdmin" text="↑" />
+            <Line endX="141.54295349121094" endY="37.51184844970703" layoutX="311.0" layoutY="169.0" rotate="90.0" startX="-162.62939453125" startY="35.458404541015625" stroke="#00000075" />
+            <Label layoutX="326.0" layoutY="67.0" text="City:" />
+            <Label fx:id="AdminCity" layoutX="359.0" layoutY="67.0" prefHeight="17.0" prefWidth="142.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="92.0" text="Caption:" />
+            <Label fx:id="AdminCaption" layoutX="383.0" layoutY="92.0" prefHeight="17.0" prefWidth="134.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="120.0" text="Activities:" />
+            <TableView fx:id="AdminPlans" layoutX="321.0" layoutY="147.0" prefHeight="90.0" prefWidth="260.0">
+              <columns>
+                <TableColumn fx:id="AdminPlansColumn" prefWidth="255.0" text="These are the plans" />
+              </columns>
+            </TableView>
+            <Label layoutX="324.0" layoutY="254.0" text="Cost (€):" />
+            <Label fx:id="AdminCost" layoutX="375.0" layoutY="254.0" prefHeight="17.0" prefWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="277.0" text="Are you interested in going?" />
+            <RadioButton fx:id="AdminRadioButton" layoutX="321.0" layoutY="302.0" mnemonicParsing="false" text="Yes I want to go!" />
+            <Button fx:id="AdminSaveButton" layoutX="323.0" layoutY="333.0" mnemonicParsing="false" onAction="#decideToGo" text="Save" />
+            <Label layoutX="34.0" layoutY="18.0" text="Hi" />
+            <Label layoutX="509.0" layoutY="18.0" text="Log out" />
+            <Label fx:id="AdminName" layoutX="52.0" layoutY="18.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
